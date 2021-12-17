@@ -21,6 +21,7 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_SSL_VERIFYPEER => false,
   CURLOPT_POSTFIELDS => 'chat_id=' . CHAT_ID . '&parse_mode=html&text=' . $tg_text,
   CURLOPT_HTTPHEADER => array(
     'Content-Type: application/x-www-form-urlencoded'
